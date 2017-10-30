@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+*::after,
+*,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.parallax1 {
+    background-image: url("images/mountains.jpg");
+    min-height: 100%; 
+}
+
+.parallax2 {
+    background-image: url("images/snow.jpg");    
+}
+
+.parallax3 {
+    background-image: url("images/beach.jpg");
+}
+
+.parallax1, .parallax2, .parallax3 {
+    position: relative;
+    opacity: 0.70;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+.caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+.caption span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
